@@ -1,0 +1,26 @@
+============= Stateless Widget ===============
+class name extends StatelessWidget {
+    name({Key? key});
+    @override
+    Widget build(BuildContext context) {
+        Size size = MediaQuery.of(context).size;
+        return Container();
+    }
+}
+
+
+============= Stateful Widget ===============
+class name extends StatefulWidget {
+    name({Key? key});
+    @override
+    State<name> createState() => _name();
+}
+
+class _name extends State<name> {
+    _name({Key? key});
+    @override
+    Widget build(BuildContext context) {
+        Size size = MediaQuery.of(context).size;
+        return Scaffold();
+    }
+}
